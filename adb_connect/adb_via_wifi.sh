@@ -1,6 +1,7 @@
 #/bin/bash
 #!/bin/bash
-IP=192.168.1.1
+read -p "Device ip: " IP
 sudo adb kill-server
 sudo adb connect $IP
+sleep 0.5
 sudo adb shell
