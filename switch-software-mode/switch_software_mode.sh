@@ -19,8 +19,11 @@ if [ $1 = "px4" ]; then
         echo "exit 0" >> rc.local
         echo "wait for connect..."
         adb wait-for-device push ./rc.local $RCPATH
+        adb shell chmod 775 $RCPATH
+	adb shell sync
         rm ./rc.local
         echo "Please reboot hover camera to affect."
+        
 fi
 
 
@@ -32,6 +35,8 @@ if [ $1 = "hover" ]; then
 	echo "exit 0" >> rc.local
 	echo "wait for connect..."
 	adb wait-for-device push ./rc.local $RCPATH
+        adb shell chmod 775 $RCPATH
+	adb shell sync
 	rm ./rc.local
 	echo "Please reboot hover camera to affect."
 fi
