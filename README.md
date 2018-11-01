@@ -79,5 +79,24 @@ mini-dm [功能介绍](https://www.yuque.com/zeorzeroopen/xhqmaf/gp6b8c)
 sudo ./mini-dm
 ```
 
+### switch-software-mode
+切换飞机使用模式，切换为 HoverCamera 线上软件版本:
+
+```bash
+./switch_software_mode.sh hover
+
+#重启后生效
+```
+
+切换飞机使用模式，切换为 PX4 软件版本:
+
+```bash
+./switch_software_mode.sh px4
+
+#重启后生效
+```
+
+
+
 
 
