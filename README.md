@@ -70,3 +70,24 @@ cd hc_tools/quick-start
 ./enableQuickStart.sh
 ```
 
+### mini-dm
+搜索 mini-dm 工具
+
+```bash
+cd hc_tools/mini-dm
+
+./findMini-dm.sh
+
+ls
+```
+
+如果寻找到 mini-dm 会复制到当前目录，会在目录中看到这个工具。
+
+mini-dm [功能介绍](https://www.yuque.com/zeorzeroopen/xhqmaf/gp6b8c)
+
+```
+sudo ./mini-dm
+```
+
+
+
