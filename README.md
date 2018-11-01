@@ -28,7 +28,7 @@ cd hc_tools/adb_connect
 ./adb_via_wifi.sh
 ```
 
-### wifi-mode 
+### setup_wifi_mode
 切换 Wi-Fi 模式
 
 ```bash
@@ -41,7 +41,7 @@ cd hc_tools/wifi-mode
 ./station.sh
 ```
 
-### softap-wifi-ssid-password
+### setup_wifi_ssid_password
 在AP模式下，设置 Wi-Fi 的 ssid 和 password
 
 ```bash
@@ -50,18 +50,8 @@ cd hc_tools/softap-wifi-ssid-password
 
 ./setup-ssid-password.sh
 ```
-### mini-dm
-使用 mini-dm 查看 DSP console 信息, mini-dm 工具附带在 hexagon_sdk 中，先执行 findMini-dm.sh 将 mini-dm 复制到当前目录，再启动 mini-dm
 
-```bash
-cd hc_tools/mini-dm
-
-# findMini-dm.sh 执行成功后，该目录下会出先 mind-dm 工具
-./findMini-dm.sh 
-
-sudo ./mini-dm
-```
-### quick-start
+### add-quick-start
 添加 PX4 和 optflow 快速启动脚本
 
 ```bash
@@ -69,4 +59,44 @@ cd hc_tools/quick-start
 
 ./enableQuickStart.sh
 ```
+
+### find-mini-dm
+搜索 mini-dm 工具
+
+```bash
+cd hc_tools/mini-dm
+
+./findMini-dm.sh
+
+ls
+```
+
+如果寻找到 mini-dm 会复制到当前目录，会在目录中看到这个工具。
+
+mini-dm [功能介绍](https://www.yuque.com/zeorzeroopen/xhqmaf/gp6b8c)
+
+```
+sudo ./mini-dm
+```
+
+### switch-software-mode
+切换飞机使用模式，切换为 HoverCamera 线上软件版本:
+
+```bash
+./switch_software_mode.sh hover
+
+#重启后生效
+```
+
+切换飞机使用模式，切换为 PX4 软件版本:
+
+```bash
+./switch_software_mode.sh px4
+
+#重启后生效
+```
+
+
+
+
 
