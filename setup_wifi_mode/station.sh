@@ -13,3 +13,5 @@ rm  ./wpa_supplicant.conf
 adb shell /usr/local/qr-linux/wificonfig.sh -s station
 adb shell /usr/local/qr-linux/wificonfig.sh -g
 
+adb shell sync
+
