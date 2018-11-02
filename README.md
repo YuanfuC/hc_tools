@@ -105,6 +105,14 @@ sudo ./mini-dm
 #重启后生效
 ```
 
+### 新飞机配置步骤推荐
+* 烧最新的镜像
+* `burn.py` 安装 HoverCamera  程序
+* `usb-id-recovery` 修改 ID 为高通 USB-ID
+* `switch-software-mode` 切换到 PX4 或者是 Hover 模式
+
+**注意** 检查 `/usr/bin/usb` 目录下,  `ls -l boot_hsusb_composition` 是否为 `boot_hsusb_composition -> /usr/bin/usb/compositions/9025`, 如果不是手动执行 `/home/linaro/usbsetup/usb_boot_link.sh`。否则再次上电重启将无法 adb 进入飞机。
+
 
 
 
