@@ -22,7 +22,7 @@ if [ $1 = "px4" ]; then
         adb shell chmod 775 $RCPATH
 	adb shell sync
         rm ./rc.local
-        echo "Please reboot hover camera to affect."
+        echo "Please reboot hover camera to take effect."
         
 fi
 
@@ -38,5 +38,5 @@ if [ $1 = "hover" ]; then
         adb shell chmod 775 $RCPATH
 	adb shell sync
 	rm ./rc.local
-	echo "Please reboot hover camera to affect."
+	echo "Please reboot hover camera to take effect."
 fi
