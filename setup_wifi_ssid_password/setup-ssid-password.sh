@@ -4,7 +4,7 @@ adb wait-for-device shell cat /etc/hostapd.conf | grep ssid
 adb shell cat /etc/hostapd.conf | grep wpa_passphrase
 echo ""
 
-echo "HoverCamera wi-fi only affect at softap mode."
+echo "HoverCamera wi-fi only take effect at softap mode."
 read -p "ssid: " SSID
 read -p "password: " PASS
 
@@ -22,5 +22,6 @@ adb shell cat /etc/hostapd.conf | grep wpa_passphrase
 
 rm ./hostapd.conf
 
-adb shell reboot 
+adb shell sync
+
 
