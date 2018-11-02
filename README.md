@@ -59,6 +59,15 @@ cd hc_tools/quick-start
 
 ./enableQuickStart.sh
 ```
+### usb-id-recovery
+将 USB 配置成高通的平台，才可以使用 mini-dm
+
+```bash
+cd hc_tools/usb-id-recovery/
+
+./recover_usb.sh
+
+```
 
 ### find-mini-dm
 搜索 mini-dm 工具
@@ -95,6 +104,7 @@ sudo ./mini-dm
 
 #重启后生效
 ```
+
 
 
 
