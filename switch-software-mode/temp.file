@@ -15,3 +15,5 @@
 
 test -f /etc/ssh/ssh_host_dsa_key || dpkg-reconfigure openssh-server
 
+/home/linaro/usbsetup/usb_boot_link.sh
+
